@@ -63,6 +63,17 @@ body{
     border-radius: 50px;
     position: fixed;
    box-shadow: 0 0 90px rgb(0, 0, 0);
+   animation: fadein 0.2s ease-in;
+}
+@keyframes fadein{
+    0%{
+        opacity:0%;
+        margin-top: 50%;
+    }
+    100%{
+        opacity:100%;
+        margin-top: 10%;
+    }
 }
 .blurred{
 filter:blur(10px);
@@ -88,17 +99,15 @@ filter:blur(10px);
 .gm,.fa,.you,.x{
      margin-left: 60px;
 }
-
 .close{
     display: flex;
-    color:rgb(18, 247, 255);
-     font-size: 40px;
+    color:blue;
+    font-size: 40px;
     font-weight: bolder;
     margin-top: -90px;
     margin-left: 500px;
     cursor: pointer;
 }
-/* For entire page */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -116,13 +125,16 @@ filter:blur(10px);
 html{
     scroll-behavior: smooth;
 }
-
 #home,#ab,#staff,#ex,#naac,#contact{
     margin-left: 40px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .home:hover,.ab:hover,.ex:hover,.naac:hover,.staff:hover,.contact:hover{
     background:linear-gradient(135deg,rgb(109, 12, 201),rgb(6, 138, 190),rgb(67, 67, 248));
+    transform:scale(1.1);
+}
+.home:hover #home,.ab:hover #ab,.ex:hover #ex,.naac:hover #naac,.staff:hover #staff,.contact:hover #contact{
+    color: rgb(255, 255, 255);
 }
 .about:hover .hr1{
     display: flex;
@@ -222,7 +234,7 @@ li{
     background: linear-gradient(135deg,rgb(13, 163, 173),rgb(0, 217, 255),rgb(13, 163, 173));
     height:50px;
     margin-top: -20px;
-    box-shadow: 0 0 10px rgb(121, 119, 119);
+    box-shadow: 0 0 10px rgba(121, 119, 119, 0.473);
     position: relative;
 }
   .fixed {
@@ -237,26 +249,26 @@ li{
 .title{
     font-size: 20px;
     font-weight: bold;
-     background: linear-gradient(135deg,rgb(13, 163, 173),rgb(0, 217, 255),rgb(13, 163, 173));
-     width:300px;
-     height:40px;
-     text-align: center;
-     justify-content: center;
-     border-radius: 15px;
-     display: flex;
-     align-items: center;
-       box-shadow: 0 0 10px rgb(122, 119, 119);
+    background: linear-gradient(135deg,rgb(13, 163, 173),rgb(0, 217, 255),rgb(13, 163, 173));
+    width:300px;
+    height:40px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(165, 163, 163, 0.534);
+    border: 3px solid rgb(13, 163, 173);
 }
 .sub{
-    width:280px;
+    width:258px;
     height:400px;
-    box-shadow: 0 0 10px rgb(122, 119, 119);
-    border-top: none;
-    margin-left: 8px;
-    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(172, 170, 170);
+    margin-left: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border: 3px solid rgb(13, 163, 173);
+    margin-top: -0.2%;
 }
 .noti{
     color:rgb(3, 41, 90);
@@ -270,7 +282,7 @@ li{
 .body-content{
        display: flex;
        flex-direction: column;
-       margin-top: -400px;
+       margin-top: -450px;
        margin-left: 400px;
 }
 .exam{
@@ -287,21 +299,24 @@ li{
 }
 .exam1:hover{
     margin-left: 15px;
-    text-decoration:underline;
-    color:rgb(255, 4, 4);
+    background:linear-gradient(5deg,rgb(9, 9, 119),rgb(92, 8, 92),rgb(40, 40, 187),rgb(9, 9, 119),rgb(92, 8, 92));
+    color:transparent;
+    -webkit-background-clip: text;
 }
 .about,.about10,.about20{
+    text-align: justify;
     margin-top: 140px;
     padding:40px;
     border:3px solid  rgb(13, 163, 173);
     width:1200px;
     margin-left: 30px;
-     box-shadow: 0 0 10px rgb(122, 119, 119);
+     box-shadow: 0 0 10px rgb(185, 184, 184);
     border-radius: 30px;
+    margin-bottom: -90px;
 }
 .sub-about,.sub-about1{
     padding:10px;
-     box-shadow: 0 0 10px rgb(122, 119, 119);
+     box-shadow: 0 0 10px rgb(207, 204, 204);
      border-radius: 20px;
 }
 .about1{
@@ -386,8 +401,8 @@ li{
             }
 }
 .sir1{
-         box-shadow: 0 0 10px rgb(122, 119, 119);
-         border-radius: 20px;
+         box-shadow: 0 0 10px rgba(122, 119, 119, 0.363);
+         border-radius: 35px;
          height:300px;
          margin-bottom: 10px;
 }
@@ -422,12 +437,60 @@ li{
     color:white;
 }
 footer{
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: center;
      background: linear-gradient(135deg,rgb(13, 163, 173),rgb(0, 217, 255),rgb(13, 163, 173));
      font-size: 20px;
      height:30px;
      align-items: center;
+}
+@media(max-width:1350px){
+ .content{
+    margin-top: -200px;
+    margin-left: 10px;
+ }
+ .image2{
+    display: flex;
+    margin-top: -150px;
+    margin-left: 1150px;
+ }
+ .image1{
+    margin-left: 15px;
+ }
+.h,.h1,.h3{
+    font-size: 35px;
+}
+ .about,.about10,.about20{
+    width:1150px;
+    margin-left: 50px;
+ }
+.notify{
+    margin-left: 20px;
+}
+
+ footer{
+    font-size: 17px;
+ }
+}
+@media(max-width:1200px){
+    .image2{
+        display: none;
+    }
+   .image1{
+    margin-left: 60px;
+   }
+   .content{
+    margin-left: 120px;
+   }
+    .about,.about10,.about20{
+    width:900px;
+    margin-left: 50px;
+ }
+ .about2{
+    margin-left: 50px;
+    width:800px;
+
+ }
 }
 
 
