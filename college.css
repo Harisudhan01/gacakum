@@ -7,6 +7,9 @@ body{
     overflow: scroll;
     overflow-x: hidden;
 }
+.caution{
+    display: none;
+}
 .head{
     background:linear-gradient(135deg, #3df2ff, #1ccae0, #3df2ff);
     height: 250px;
@@ -491,6 +494,112 @@ footer{
     width:800px;
 
  }
+}
+@media(max-width:1000px){
+   .image1{
+    margin-left: 10px;
+   }
+   .content{
+    margin-left: 160px;
+   }
+    .about,.about10,.about20{
+    width:800px;
+    margin-left: 50px;
+ }
+ .about2{
+    margin-left: 50px;
+    width:700px;
+ }
+ footer{
+    font-size: 15px;
+ }
+ body{
+    overflow-x: hidden;
+ }
+}
+@media(max-width:370px){
+  .image1{
+    display: none;
+      width:40px;
+   }
+   .home,.ab,.staff,.naac,.ex,.contact{
+    display: none;
+   }
+   .navbar{
+    width:367px;
+   }
+   .content{
+    margin-left: 100px;
+   }
+   .h,.h1,.h3{
+   margin-top: 120px;
+   margin-left:-100px;
+    font-size: 12px; 
+   }
+   .h1{
+    font-size: 20px;
+   }
+   .h{
+    margin-bottom: -120px;
+    margin-top: 200px;
+    font-size: 20px;
+   }
+   .h3{
+    margin-top: 20px;
+   }
+   .head{
+    height: 140px;
+   }
+    .about,.about10,.about20{
+    width:800px;
+    margin-left: 50px;
+ }
+ .about2{
+    margin-left: 50px;
+    width:700px;
+ }
+ footer{
+    font-size: 15px;
+ }
+ body{
+    overflow-x: hidden;
+
+ }
+ .caution{
+    display: block;
+ }
+.about,.about20,footer{
+    display: none;
+}
+#control{
+    display: none;
+}
+#imp{
+    font-size: 25px;
+    margin-top: -20px;
+}
+.hi{
+    font-size: 20px;
+}
+.links{
+    margin-left: -20px;
+    width:300px;
+}
+.sub-about,.hr8{
+    display: none;
+}
+.about10{
+    width:190px;
+    margin-top: 0px;
+}
+footer{
+    display: block;
+    margin-top: 120px;
+    font-size: 8px;
+}
+.body-content{
+    display: none;
+}
 }
 
 
