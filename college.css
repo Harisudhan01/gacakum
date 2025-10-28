@@ -516,6 +516,11 @@ footer{
  body{
     overflow-x: hidden;
  }
+ .popup{
+    width:600px;
+    margin-left: 170px;
+    margin-top: 150px;
+ }
 }
 @media(max-width:370px){
   .image1{
