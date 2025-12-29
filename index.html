@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="college.css">
 </head>
 <body>
+    
+    <div id="loading">
+        <div class="log">
+        <img src="logo.png" class="hi"> 
+        
+    </div><p class="load">Loading....</p>
+    <div class="box"></div>
+    <div class="box2"></div>
+</div>
+    <div id="whole">
      <div class="popup" id="popup">
         <div class="popup1">
             <h1 class="con">Contact</h1>
@@ -203,6 +213,7 @@ Department of Computer Science</p>
     <footer id="footer">
         Copyright @ 2025, All Right Reserved, Government Arts College (Autonomous),Department Of Computer Science, Kumbakonam     |     Developed by Harisudhan.
     </footer>
+    </div>
 </body>
 </html>
 <script>
@@ -248,4 +259,8 @@ window.onscroll = function() {
  t.classList.remove("blurred");
  footer.classList.remove("blurred");
  })
+ window.onload=function(){
+    document.getElementById("loading").style.display="none";
+    document.getElementById("whole").style.display="block";
+ }
 </script>
